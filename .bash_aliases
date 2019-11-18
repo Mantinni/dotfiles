@@ -36,5 +36,4 @@ alias npmserve='npm run watch'
 
 # Other commands
 alias dw='shutdown -h now'
-
 alias uu='apt update && apt upgrade'
