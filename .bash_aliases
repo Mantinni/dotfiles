@@ -22,9 +22,10 @@ alias cp='cp -i' # Confirm before overwriting something
 alias df='df -h' # Human readable size
 
 # Git
-alias gg='git pull && git push'    # Pull and push at the same time
-alias gp=~/scripts/gitpullpush.sh  # Add current path, commits, pulls and pushes
-alias gzip=~/scripts/zipchanges.sh # Zips changes from git commits
+alias gg='git pull && git push'      # Pull and push at the same time
+alias gp='~/scripts/gitpullpush.sh'  # Add current path, commits, pulls and pushes
+alias gzip='~/scripts/zipchanges.sh' # Zips changes from git commits
+alias gtree=git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"'
 
 # Append to this file
 alias makealias='~/scripts/makealiases.sh'
@@ -33,6 +34,10 @@ alias makealias='~/scripts/makealiases.sh'
 alias pa='php artisan'
 alias serve='php artisan serve'
 alias npmserve='npm run watch'
+alias fresh='php artisan migrate:frsh --seed'
+alias seed='php artisan db:seed'
+alias test='./vendor/bin/phpunit'
+alias cda='composer dump-autoload -o'
 
 # Other commands
 alias dw='shutdown -h now'
