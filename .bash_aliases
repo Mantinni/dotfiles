@@ -22,10 +22,10 @@ alias cp='cp -i' # Confirm before overwriting something
 alias df='df -h' # Human readable size
 
 # Git
-alias gg='git pull && git push'      # Pull and push at the same time
-alias gp='~/scripts/gitpullpush.sh'  # Add current path, commits, pulls and pushes
-alias gzip='~/scripts/zipchanges.sh' # Zips changes from git commits
-alias gtree=git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"'
+alias gg='git pull && git push'                                                     # Pull and push at the same time
+alias gp='~/scripts/gitpullpush.sh'                                                 # Add current path, commits, pulls and pushes
+alias gzip='~/scripts/zipchanges.sh'                                                # Zips changes from git commits
+alias gtree'=git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%s"' # Shows git tree of branches
 
 # Append to this file
 alias makealias='~/scripts/makealiases.sh'
