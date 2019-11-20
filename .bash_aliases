@@ -30,14 +30,17 @@ alias gtree'=git log --graph --full-history --all --pretty=format:"%h%x09%d%x20%
 # Append to this file
 alias makealias='~/scripts/makealiases.sh'
 
-# Web development
+# Web development (Laravel)
 alias pa='php artisan'
 alias serve='php artisan serve'
 alias npmserve='npm run watch'
-alias fresh='php artisan migrate:frsh --seed'
+alias fresh='php artisan migrate:fresh --seed'
 alias seed='php artisan db:seed'
 alias test='./vendor/bin/phpunit'
 alias cda='composer dump-autoload -o'
+alias migration='php artisan make:migration'
+alias controller='php artisan make:controller'
+alias model='php artisan make:model'
 
 # Other commands
 alias dw='shutdown -h now'
