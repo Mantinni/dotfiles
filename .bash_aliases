@@ -45,3 +45,4 @@ alias model='php artisan make:model'
 # Other commands
 alias dw='shutdown -h now'
 alias uu='apt update && apt upgrade'
+alias tarall="find . -name '*.tar.gz' -execdir tar -xzvf '{}' \;"
