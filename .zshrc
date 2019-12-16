@@ -22,6 +22,9 @@ zmodload zsh/complist
 compinit
 _comp_options+=(globdots)
 
+# Key bindings
+bindkey -s '^o' 'ranger\n'
+
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
