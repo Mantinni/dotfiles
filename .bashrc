@@ -36,10 +36,10 @@ xterm*|rxvt*)
     ;;
 esac
 
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+  . ~/.aliases
 fi
 
-if [ -f ~/.secret_bash_aliases ]; then
-  . ~/.secret_bash_aliases
+if [ -f ~/.secret_aliases ]; then
+  . ~/.secret_aliases
 fi
