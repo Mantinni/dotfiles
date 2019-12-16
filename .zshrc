@@ -15,6 +15,13 @@ HISTCONTROL=ignoreboth
 HISTSIZE=10000
 HISTFILESIZE=10000
 
+# Autocompletion settings
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)
+
 if [ -f ~/.aliases ]; then
   . ~/.aliases
 fi
@@ -22,3 +29,6 @@ fi
 if [ -f ~/.secret_aliases ]; then
   . ~/.secret_aliases
 fi
+
+# Load zsh-syntax-highlighting; should be last.
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
