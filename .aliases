@@ -46,3 +46,6 @@ alias model='php artisan make:model'
 alias dw='shutdown -h now'
 alias uu='apt update && apt upgrade'
 alias tarall="find . -name '*.tar.gz' -execdir tar -xzvf '{}' \;"
+alias getssh="cat ~/.ssh/id_rsa.pub"
+alias copyssh="cat ~/.ssh/id_rsa.pub | xclip -selection clipboard"
+alias go="/usr/local/go/bin/go"
