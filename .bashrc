@@ -43,3 +43,6 @@ fi
 if [ -f ~/.secret_aliases ]; then
   . ~/.secret_aliases
 fi
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
